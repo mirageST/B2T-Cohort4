@@ -1,0 +1,34 @@
+h2 {
+				color: blue; 
+				font-style: itallic;
+				font-size: 40px;
+			}
+			h3 {
+				color: yellow; 
+				font-style: itallic;
+				font-size: 40px;
+			}
+			h4 {
+				color: green; 
+				font-style: itallic;
+				font-size: 20px;
+			}
+			h5 {
+				color: pink; 
+				font-style: itallic;
+				font-size: 20px;
+			}
+
+			div{
+				background-image: url(https://www.fda.gov/ucm
+					/groups/fdagov-public/documents/image/ucm
+					592803.jpg);
+				height: 200px;
+				width: 50%;
+				margin: 0 auto; /*centers*/
+			}
+			<ul type="square">
+			<li>Tacos<img src="https://www.deltaco.com/files/menu/item/thumb_The-Turkey-Del-Taco-%28Crunchy%29.jpg"></li>
+			<li>Molsilla<img src="../images/image.jpeg"></li>
+			<li>Jerk Chicken</li>
+		</ul>

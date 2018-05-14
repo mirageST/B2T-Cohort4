@@ -1,0 +1,28 @@
+body{
+	background-image: url(https://i.ytimg.com/vi/RPGLcx6Fy_0/maxresdefault.jpg);
+	margin:center ;
+}
+
+.text_color p{
+				color: black; 
+				}
+.text_color h1{
+				color: black; 
+				}
+.text_color h2{
+				color: black; 
+				}		
+.mydesc p{
+				font-size: 20px; 
+				}	
+.contact_edit p{
+	font-size: 20px;
+	color: black;
+}					
+.my_footer {
+	position: absolute;
+	bottom: 0;
+}				
+.projtext {
+	font-size: 50px;
+}			
