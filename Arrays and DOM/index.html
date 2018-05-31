@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id="pageText"></p>
+
+	<form>
+		
+		<input type="button" value="Submit" onclick="fruitSort()"/>
+
+	</form>
+
+	<script type="text/javascript">
+		var fruits = ['apple', 'orange', 'kiwi'];
+		document.getElementById("pageText").innerHTML = fruits.join(' with ');
+
+		function fruitSort(){
+			
+			fruits.push(prompt('Add New Fruit'));
+			fruits.sort();
+			document.getElementById("pageText").innerHTML = fruits.join(' with ');
+
+		}
+
+	</script>
+
+</body>
+</html>
