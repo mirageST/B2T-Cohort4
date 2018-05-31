@@ -18,7 +18,7 @@
 
 		function fruitSort(){
 			
-			fruits.push(prompt('Add New Fruit'));
+			fruits.push(prompt('Add New Fruit').toLowerCase());
 			fruits.sort();
 			document.getElementById("pageText").innerHTML = fruits.join(' with ');
 
