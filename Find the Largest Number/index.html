@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+
+		<script type="text/javascript">
+			var p1 = parseInt(prompt('Enter a number'));
+			var p2 = parseInt(prompt('Enter another number'));
+			var p3 = parseInt(prompt('Enter one last number'));
+			var numArray = [p1, p2, p3];
+
+			function maximumVal(numArr) {
+    			if (numArr[0]>numArr[1] && numArr[0]>numArr[2]){
+    					return numArr[0]
+    			}
+
+    			else if (numArr[1]>numArr[2]) {
+    					return numArr[1]
+    			}
+    			else {
+    					return numArr[2]
+    			}	
+
+			}
+
+		    console.log(maximumVal(numArray))
+
+		</script>
+	</body>
+</html>
