@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<hl id="pageText"></hl>
+
+		<script type="text/javascript">
+		 
+			
+			function fizzBuzz(num, UBound){
+				while (num <= UBound){
+					if (num%5 == 0 && num%3 == 0) {
+							document.getElementById('pageText').innerHTML += "FizzBuzz" + "<br>"
+					}
+
+					else if (num%5 == 0) {
+							document.getElementById('pageText').innerHTML += "Buzz" + "<br>"
+					}
+
+					else if (num%3 == 0){
+							document.getElementById('pageText').innerHTML += "Fizz" + "<br>"
+					}	
+
+					else {
+							document.getElementById('pageText').innerHTML += num + "<br>"
+					}
+
+					num++;					
+
+				}
+			}
+
+
+			fizzBuzz(1,100);
+		    
+		</script>
+	</body>
+</html>
