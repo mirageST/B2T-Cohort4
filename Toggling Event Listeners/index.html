@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	
+	<input id="increase" type="button" value="ON">
+	<canvas id="myCanvas" width="300" height="150" style="border:1px solid #d3d3d3;"></canvas>
+
+	<script type="text/javascript">
+		
+		var c = document.getElementById("myCanvas");
+		var ctx= c.getContext("2d");
+		ctx.rect(20,20,150,100);
+		ctx.stroke();
+		
+		document.getElementById('increase').addEventListener('click', function(){
+
+			if (document.getElementById("increase").value == "ON"){
+				document.getElementById('increase').value = "OFF" 
+				
+			}
+
+			else {
+				document.getElementById('increase').value = "ON" 
+
+			};
+		});
+			
+
+
+		document.getElementById('myCanvas').addEventListener('mouseover', function(){
+					if (document.getElementById("increase").value == "ON"){
+					ctx.fillStyle = "green";
+					ctx.fillRect(20, 20, 150, 100);
+					}
+				})
+
+		document.getElementById('myCanvas').addEventListener('mouseout', function(){
+					if (document.getElementById("increase").value == "ON"){
+					ctx.fillStyle = "red";
+					ctx.fillRect(20, 20, 150, 100);
+					}
+				})
+				
+
+		
+
+	</script>
+
+</body>
+</html>
