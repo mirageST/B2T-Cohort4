@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<h1 id="pageDisp"></h1>
+	
+	<script type="text/javascript">
+		var library = [
+ 		{ author: 'Bill Gates', title: 'The Road Ahead', readingStatus: true },
+ 		{ author: 'Steve Jobs', title: 'Walter Isaacson', readingStatus: true },
+ 		{ author: 'Suzanne Collins', title: 'Mockingjay: The Final Book of The Hunger Games', readingStatus: false }
+ 		]
+
+ 		function readOrNot(lib){
+	 		for (i = 0; i < lib.length; i++){
+
+	 			if (lib[i].readingStatus == true){
+	 				document.getElementById("pageDisp").innerHTML +=  "Already read " + lib[i].title + " by " + lib[i].author + " ." + '<br>'
+	 			}
+
+	 			else if (lib[i].readingStatus == false){
+	 				document.getElementById("pageDisp").innerHTML += "You still need to read " + lib[i].title + " by " + lib[i].author + " ." + '<br>'
+	 			}
+	 		}	
+
+ 		}
+
+ 		readOrNot(library)
+ 		
+	</script>
+</body>
+</html>
